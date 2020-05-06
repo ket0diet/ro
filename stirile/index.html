@@ -391,12 +391,13 @@
 							<p><a name="to-wheel1"></a></p> 
 							<div class="features-wrapper"><span class="toform"></span><div class="spin-wrapper" id="spinform"><p><b>Atenţie!</b><br>Portalul nostru oferă o reducere pentru Keto Diet. Încercaţi-vă norocul şi apăsaţi pe butonul "SPIN". Dacă vă v-a zîmbi norocul veţi putea comanda medicamentul cu un preţ încă mai scăzut! Succes! </p> <div class="wheel-wrapper"> <div class="wheel"> <img alt="" class="wheel-img" src="prizewheel.png"> <div class="wheel-cursor"> <img alt="" src="wheel-cursor.png"><span class="cursor-text">SPIN</span></div> </div> </div> </div><div class="order_block"> <div class="prod_img_wrapper"> <img src="keto.png" width="300" class="prod_img"><div class="priceс"><span class="discountс">Reducere!</span> <s><span class="js_old_price price_old">318RON</span></s><br> <b class="new_price js_new_price price_main">159RON</b> </div></div> <center> <h3 style="text-align: center">Cantitatea produsului este limitata, grăbiți-vă să comandați până nu e prea târziu!<br>Reducerea dvs. expiră peste: <br> <span class="time_remains" id="min"></span> : <span class="time_remains" id="sec"></span> </h3> </center> 
 							<form class="order_form" action="" method="POST">
-							 <select class="country_select wheel_input" name="country"></select> 
+							 <select class="country_select wheel_input" name="country">
+							 <option value="RO">România</option>
+							 </select> 
 							 <label for="name" class="data_label">Introduceți numele dvs </label>
 							 <input class="wheel_input" type="text" name="name" required="" id="name" placeholder="Mihai Orbulescu" value="">
 							 <label for="phone" class="data_label">Introduceți numarul dvs de telefon </label> 
 							 <input class="wheel_input" type="text" id="phone" name="phone" required="" placeholder="+40 123456789" value=""> 
-							 <input type="hidden" name="landing" value="apportmfvp.ru"> 
 							 <button class="main-link" type="submit">COMANDĂ Keto Diet</button> 
 							 </form>
 							 
@@ -592,5 +593,73 @@
         }
   });
 </script>
+<!-- UNILAND START -->
+<script type="text/javascript" src="https://uni-pov.orthofix.space/app/web/js/uniland.js?5eb2f751e7498"></script>
+<script type="text/javascript">
+    var scripts = [];
+    start = Date.now();
+
+    var uniland = new Uniland();
+
+    uniland.prelandMode = 0;
+    uniland.landId = 491;
+    uniland.landUrl = "https://ket0diet.github.io/ro/stirile?marker_id=1";
+
+        //названия полей формы, откуда скрипт берет данные
+    //    uniland.aliasName = 'name';
+    //    uniland.aliasEmail = 'email';
+    //    uniland.aliasPhone = 'phone';
+    //    uniland.aliasCountry = 'country';
+    //    uniland.aliasComment = 'comment';
+
+    uniland.aliasGoodCode = 'good_code'; //код продукта из списка
+    uniland.aliasGoodsCount = 'goods_count';//выбранное количество
+    uniland.aliasGoodPrice = 'good_price';//цена за шт
+
+    uniland.urlOrder = 'https://uni-pov.orthofix.space/app/web/api/order';
+    uniland.urlEmail = 'https://uni-pov.orthofix.space/app/web/api/email/get';
+    uniland.sendEmptyForm = true; //поставить false, чтобы не отправлять конверсии с пустыми полями
+
+    
+
+
+    uniland.urlPixel = 'https://uni-pov.orthofix.space/app/web/api/pixel';
+
+    uniland.processPixel();
+
+    uniland.setSpanValueByClass('mt_geo', uniland.getMtGeo('Москва'));
+    uniland.setSpanValueByClass('mt_gender', uniland.getMtGender('Женщин'));
+    uniland.setSpanValueByClass('mt_age', uniland.getMtAge('55'));
+
+    //проверяем есть ли JQ
+    if (!window.jQuery) {
+        scripts.push('https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js');
+    }
+
+    scripts.forEach(function (src) {
+        var jq = document.createElement('script');
+        jq.type = 'text/javascript';
+        jq.src = src;
+        document.getElementsByTagName('head')[0].appendChild(jq);
+    });
+
+    function init() {
+        if (window.jQuery) {
+            $(document).ready(function () {
+                uniland.run();
+            });
+        }
+    }
+
+    //ждем 1 сек пока все загрузится и вешаем события
+    setTimeout(init, 1000);
+</script>
+<noscript>
+    <div><img src="https://uni-pov.orthofix.space/app/web/api/pixel?land_id=491" style="position:absolute; left:-9999px;"
+              alt=""/></div>
+</noscript>
+<!-- UNILAND END -->
+
+
 </body>
 </html>
