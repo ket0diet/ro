@@ -149,13 +149,13 @@
 }
 .show-message__info.icon-box::before {
   content: " ";
-  background-image: url("count-user_white.png");
+  background-image: url("");
 }
 .everad-sprite-callback+.show-message__info.icon-box::before {
   background-image: url("");
 }
 .everad-sprite-bucket+.show-message__info.icon-box::before {
-  background-image: url("count-order-984_white.png");
+  background-image: url("");
 }
 @media (max-width: 767px) {
   .show-message__info.icon-box.horizon {
